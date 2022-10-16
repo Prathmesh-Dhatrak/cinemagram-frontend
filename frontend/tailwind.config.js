@@ -21,9 +21,9 @@ module.exports = {
       colors: {
         coolGray: colors.coolGray,
         gray: colors.gray,
-        "gray-950": "#4b5563",
-        "gray-1000": "#6b7280",
-        "gray-1100": "#9ca3af",
+        'indigo-950': '#1b1925',
+        'indigo-1000': '#100f17',
+        'indigo-1100': '#08070f'
       },
       height: {
         "60px": "60px",
