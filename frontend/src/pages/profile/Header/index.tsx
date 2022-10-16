@@ -202,7 +202,7 @@ const Header: React.FC<IProps> = ({ profile, auth }) => {
                         {/* ---- NAME AND USERNAME */}
                         <div className="text-center laptop:text-left mb-4 laptop:mb-0">
                             <h2 className="text-3xl dark:text-white">{profile.fullname || `@${profile.username}`}</h2>
-                            <span className="text-indigo-700 dark:text-indigo-400">{profile.fullname && `@${profile.username}`}</span>
+                            <span className="text-red-700 dark:text-indigo-400">{profile.fullname && `@${profile.username}`}</span>
                         </div>
                         {/* ---- FOLLOW/UNFOLLOW/MESSAGE BUTTON */}
                         {!profile.isOwnProfile ? (
@@ -222,7 +222,7 @@ const Header: React.FC<IProps> = ({ profile, auth }) => {
                                 onClick={() => history.push(`/user/${profile.username}/edit`)}
                             >
                                 <EditOutlined className="text-xl mr-4" />
-                                    Edit Profile
+                                Edit Profile
                             </button>
                         )}
                     </div>

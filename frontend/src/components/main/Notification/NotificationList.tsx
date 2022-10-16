@@ -52,11 +52,11 @@ const NotificationList: React.FC<IProps> = (props) => {
                                                     className="mr-2 flex-shrink-0"
                                                 />
                                                 <div>
-                                                    <span className="text-indigo-700 dark:text-indigo-400 font-medium break-all">
+                                                    <span className="text-red-700 dark:text-indigo-400 font-medium break-all">
                                                         {notif.initiator.username}
                                                     </span>
                                                     &nbsp;
-                                                <span className="text-gray-600 dark:text-gray-400 break-all">
+                                                    <span className="text-gray-600 dark:text-gray-400 break-all">
                                                         {
                                                             notif.type === 'like' ? 'likes your post.'
                                                                 : notif.type === 'comment' ? 'commented on your post.'
@@ -73,11 +73,11 @@ const NotificationList: React.FC<IProps> = (props) => {
                                                 </div>
                                             </div>
                                             {(notif.type === 'like' || notif.type === 'comment-like') ? (
-                                                <LikeOutlined className="text-2xl text-indigo-700 dark:text-indigo-400 absolute right-4 top-0 bottom-0 my-auto" />
+                                                <LikeOutlined className="text-2xl text-red-700 dark:text-indigo-400 absolute right-4 top-0 bottom-0 my-auto" />
                                             ) : (notif.type === 'comment' || notif.type === 'reply') ? (
-                                                <CommentOutlined className="text-2xl text-indigo-700 dark:text-indigo-400 absolute right-4 top-0 bottom-0 my-auto" />
+                                                <CommentOutlined className="text-2xl text-red-700 dark:text-indigo-400 absolute right-4 top-0 bottom-0 my-auto" />
                                             ) : (
-                                                <UserAddOutlined className="text-2xl text-indigo-700 dark:text-indigo-400 absolute right-4 top-0 bottom-0 my-auto" />
+                                                <UserAddOutlined className="text-2xl text-red-700 dark:text-indigo-400 absolute right-4 top-0 bottom-0 my-auto" />
                                             )}
                                         </div>
                                     </div>

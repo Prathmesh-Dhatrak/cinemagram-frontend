@@ -52,7 +52,7 @@ const Tabs: React.FC<IProps> = ({ username, isOwnProfile, followersCount, follow
                     to={`/user/${username}/followers`}
                     className={`${linkStyleName} ${activeNav === 'followers' && 'border-indigo-700 dark:border-indigo-400 border-b-4'}`}
                 >
-                    <span className="laptop:text-lg text-indigo-700 dark:text-indigo-400">{followersCount}</span>
+                    <span className="laptop:text-lg text-red-700 dark:text-indigo-400">{followersCount}</span>
                     <span className="hidden laptop:inline-block">{followersCount > 1 ? 'Followers' : 'Follower'}</span>
                     <TeamOutlined className="laptop:hidden text-2xl" />
                 </Link>
@@ -62,7 +62,7 @@ const Tabs: React.FC<IProps> = ({ username, isOwnProfile, followersCount, follow
                     to={`/user/${username}/following`}
                     className={`${linkStyleName} ${activeNav === 'following' && 'border-indigo-700 dark:border-indigo-400 border-b-4'}`}
                 >
-                    <span className="laptop:text-lg text-indigo-700 dark:text-indigo-400">{followingCount}</span>
+                    <span className="laptop:text-lg text-red-700 dark:text-indigo-400">{followingCount}</span>
                     <span className="hidden laptop:inline-block">Following</span>
                     <UserAddOutlined className="laptop:hidden text-2xl" />
                 </Link>

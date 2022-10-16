@@ -45,7 +45,7 @@ const MessagesList: React.FC<IProps> = (props) => {
                                                 {!message.isOwnMessage ? message.from.username : message.to.username}
                                             </h5>
                                             {/* -- MESSAGE--- */}
-                                            <span className={`block max-w-16rem laptop:max-w-xs whitespace-nowrap overflow-hidden overflow-ellipsis ${(message.seen || message.isOwnMessage) ? 'text-gray-400' : 'text-indigo-600 dark:text-indigo-400 font-medium'} text-sm`}>
+                                            <span className={`block max-w-16rem laptop:max-w-xs whitespace-nowrap overflow-hidden overflow-ellipsis ${(message.seen || message.isOwnMessage) ? 'text-gray-400' : 'text-red-600 dark:text-indigo-400 font-medium'} text-sm`}>
                                                 {message.isOwnMessage && 'You:'} {message.text}
                                             </span>
                                             {/* --- DATE --- */}

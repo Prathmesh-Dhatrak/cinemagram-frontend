@@ -116,7 +116,7 @@ const CreatePostModal: React.FC<IProps> = (props) => {
                                         className="group flex items-center justify-center w-10 h-10 border-2 border-dashed border-gray-400 hover:border-indigo-700"
                                         title="Upload photo"
                                     >
-                                        <FileImageOutlined className="text-xl text-gray-400 hover:text-indigo-700" />
+                                        <FileImageOutlined className="text-xl text-gray-400 hover:text-red-700" />
                                     </div>
                                 </label>
                             </div>

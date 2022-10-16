@@ -200,7 +200,7 @@ const CommentItem: React.FC<IProps> = (props) => {
                                     <span className="text-sm text-gray-500">{comment.likesCount}</span>
                                 )}
                                 <span
-                                    className={`text-gray-400 hover:cursor-pointer hover:text-gray-800 dark:hover:text-gray-200 text-xs ${comment.isLiked && 'font-bold text-indigo-500 dark:text-indigo-300'} ${isLiking && 'opacity-50 hover:cursor-default'}`}
+                                    className={`text-gray-400 hover:cursor-pointer hover:text-gray-800 dark:hover:text-gray-200 text-xs ${comment.isLiked && 'font-bold text-red-500 dark:text-indigo-300'} ${isLiking && 'opacity-50 hover:cursor-default'}`}
                                     onClick={onClickLike}
                                 >
                                     {comment.isLiked ? 'Unlike' : 'Like'}
@@ -229,7 +229,7 @@ const CommentItem: React.FC<IProps> = (props) => {
                                 <div className="flex space-x-2">
                                     {!error && (
                                         <span
-                                            className="text-xs text-indigo-500 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-200 mt-2 hover:cursor-pointer"
+                                            className="text-xs text-red-500 hover:text-red-400 dark:text-indigo-400 dark:hover:text-indigo-200 mt-2 hover:cursor-pointer"
                                             onClick={onClickViewReplies}
                                         >
                                             {(isVisibleReplies && replies.length !== 0) ? 'Hide Replies' : 'View Replies'}
