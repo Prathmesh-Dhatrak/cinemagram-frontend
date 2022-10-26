@@ -112,7 +112,7 @@ const Comments: React.FC<IProps> = (props) => {
                 {/* ---- LOAD MORE COMMENTS BUTTON ----- */}
                 {(!error) && (
                     <span
-                        className="text-indigo-700 dark:text-indigo-400 text-sm font-bold cursor-pointer inline-block p-2"
+                        className="text-red-700 dark:text-indigo-400 text-sm font-bold cursor-pointer inline-block p-2"
                         onClick={() => fetchComment({
                             offset: 1,
                             limit: 10,

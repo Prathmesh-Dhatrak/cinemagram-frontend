@@ -145,7 +145,7 @@ const Login: React.FC = () => {
                                 </div>
                             </div>
                         </div>
-                        <Link className="font-medium text-sm text-gray-400 inline-block laptop:block my-4  laptop:mb-0 hover:text-indigo-500 underline laptop:w-2/4 laptop:pl-4" to="/forgot-password">
+                        <Link className="font-medium text-sm text-gray-400 inline-block laptop:block my-4  laptop:mb-0 hover:text-red-500 underline laptop:w-2/4 laptop:pl-4" to="/forgot-password">
                             Forgot your password?
                         </Link>
                         <button type="submit" className="button--stretch" disabled={isLoading}>

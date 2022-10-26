@@ -59,7 +59,7 @@ const NavBarMobile: React.FC<IProps> = ({ theme, isAuth, auth, openModal }) => {
                     <img
                         src={logo}
                         alt=""
-                        className="w-24"
+                        className="w-36"
                         style={{ filter: `brightness(${theme === 'dark' ? 3.5 : 1})` }}
                     />
                 </Link>
@@ -128,7 +128,7 @@ const NavBarMobile: React.FC<IProps> = ({ theme, isAuth, auth, openModal }) => {
                                 onClick={onClickMenuItem}
                                 to={`/user/${auth.username}/following`}
                             >
-                                <TeamOutlined className="text-indigo-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
+                                <TeamOutlined className="text-red-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
                                 <h6 className="text-sm">Following</h6>
                             </Link>
                         </li>
@@ -138,7 +138,7 @@ const NavBarMobile: React.FC<IProps> = ({ theme, isAuth, auth, openModal }) => {
                                 onClick={onClickMenuItem}
                                 to={`/user/${auth.username}/followers`}
                             >
-                                <TeamOutlined className="text-indigo-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
+                                <TeamOutlined className="text-red-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
                                 <h6 className="text-sm">Followers</h6>
                             </Link>
                         </li>
@@ -148,7 +148,7 @@ const NavBarMobile: React.FC<IProps> = ({ theme, isAuth, auth, openModal }) => {
                                 onClick={onClickMenuItem}
                                 to={`/user/${auth.username}/bookmarks`}
                             >
-                                <StarOutlined className="text-indigo-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
+                                <StarOutlined className="text-red-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
                                 <h6 className="text-sm">Bookmarks</h6>
                             </Link>
                         </li>
@@ -158,7 +158,7 @@ const NavBarMobile: React.FC<IProps> = ({ theme, isAuth, auth, openModal }) => {
                                 onClick={onClickMenuItem}
                                 to={SUGGESTED_PEOPLE}
                             >
-                                <UsergroupAddOutlined className="text-indigo-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
+                                <UsergroupAddOutlined className="text-red-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
                                 <h6 className="text-sm">Suggested People</h6>
                             </Link>
                         </li>

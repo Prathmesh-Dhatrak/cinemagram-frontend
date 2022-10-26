@@ -70,7 +70,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:9000",
+  "proxy": "http://localhost:9001",
   "devDependencies": {
     "@craco/craco": "^6.0.0",
     "@neojp/tailwindcss-important-variant": "^1.0.1",

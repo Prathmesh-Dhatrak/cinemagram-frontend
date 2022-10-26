@@ -18,19 +18,19 @@ const SideMenu: React.FC<IProps> = ({ username, profilePicture }) => {
             </li>
             <li className="px-4 py-3 cursor-pointer mt-4 hover:bg-indigo-100  dark:hover:bg-indigo-900">
                 <Link to={`/user/${username}/following`} className="flex items-center text-black">
-                    <TeamOutlined className="text-indigo-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
+                    <TeamOutlined className="text-red-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
                     <h6 className="text-sm dark:text-white">Following</h6>
                 </Link>
             </li>
             <li className="px-4 py-3 cursor-pointer mt-4 hover:bg-indigo-100  dark:hover:bg-indigo-900">
                 <Link to={`/user/${username}/followers`} className="flex items-center text-black">
-                    <TeamOutlined className="text-indigo-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
+                    <TeamOutlined className="text-red-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
                     <h6 className="text-sm dark:text-white">Followers</h6>
                 </Link>
             </li>
             <li className="px-4 py-3 cursor-pointer mt-4 hover:bg-indigo-100  dark:hover:bg-indigo-900">
                 <Link to={`/user/${username}/bookmarks`} className="flex items-center text-black">
-                    <StarOutlined className="text-indigo-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
+                    <StarOutlined className="text-red-700 dark:text-indigo-400" style={{ fontSize: '30px', marginRight: '25px' }} />
                     <h6 className="text-sm dark:text-white">Bookmarks</h6>
                 </Link>
             </li>

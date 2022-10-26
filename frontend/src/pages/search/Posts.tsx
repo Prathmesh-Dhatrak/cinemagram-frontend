@@ -63,7 +63,7 @@ const Posts: React.FC<IProps> = ({ posts, searchQuery }) => {
                                     Posted by
                                     &nbsp;
                                     <span
-                                        className="underline text-indigo-700 dark:text-indigo-400 cursor-pointer hover:text-indigo-400"
+                                        className="underline text-red-700 dark:text-indigo-400 cursor-pointer hover:text-red-400"
                                         onClick={(e) => onClickAuthor(e, post.author.username)}
                                     >
                                         {post.author.username}

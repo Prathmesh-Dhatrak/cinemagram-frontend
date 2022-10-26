@@ -3,7 +3,7 @@ import { ISettingsState } from "~/types/types";
 import { TSettingsActionType } from "../action/settingsActions";
 
 const initState: ISettingsState = {
-    theme: 'light',
+    theme: 'dark',
     // ... more settings
 }
 

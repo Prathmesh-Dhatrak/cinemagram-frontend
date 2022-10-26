@@ -177,7 +177,7 @@ const ChatBox: React.FC<IProps> = ({ user, target }) => {
                                 className={`flex justify-center items-center py-2 mb-4 bg-indigo-100 cursor-pointer`}
                                 onClick={fetchMessages}
                             >
-                                <span className="text-indigo-700 text-xs">Older messages</span>
+                                <span className="text-red-700 text-xs">Older messages</span>
                             </div>
                         ) : (
                             <div className="flex justify-center py-2 mb-4">

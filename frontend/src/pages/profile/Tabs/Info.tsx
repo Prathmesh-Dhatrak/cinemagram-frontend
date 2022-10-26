@@ -18,7 +18,7 @@ const Info = () => {
                 <h3 className="text-gray-500 dark:text-white">Info</h3>
                 {isOwnProfile && (
                     <span
-                        className="underline cursor-pointer text-indigo-700 dark:text-indigo-400 pr-4"
+                        className="underline cursor-pointer text-red-700 dark:text-indigo-400 pr-4"
                         onClick={() => history.push(`/user/${profile.username}/edit`)}
                     >
                         Edit
