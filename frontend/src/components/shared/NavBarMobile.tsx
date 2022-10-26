@@ -59,7 +59,7 @@ const NavBarMobile: React.FC<IProps> = ({ theme, isAuth, auth, openModal }) => {
                     <img
                         src={logo}
                         alt=""
-                        className="w-24"
+                        className="w-36"
                         style={{ filter: `brightness(${theme === 'dark' ? 3.5 : 1})` }}
                     />
                 </Link>
