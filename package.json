@@ -22,6 +22,8 @@
   "keywords": [],
   "author": "Prathmesh Dhatrak <prathmesh101dhatrak@gmail.com>",
   "devDependencies": {
-    "concurrently": "^5.3.0"
+    "concurrently": "^5.3.0",
+    "@craco/craco": "^6.0.0",
+    "nodemon": "^2.0.6"
   }
 }
