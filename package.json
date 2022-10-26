@@ -14,7 +14,10 @@
     "start-client": "cd frontend && npm start",
     "start-server": "cd server && npm start",
     "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
-    "init-project": "concurrently \"cd frontend && npm install\" \"cd server && npm install\""
+    "init-project": "concurrently \"cd frontend && npm install\" \"cd server && npm install\"",
+    "build-client": "cd frontend && npm run build",
+    "build-server": "cd server && npm run build",
+    "build": "concurrently \"npm run build-server\" \"npm run build-client\""
   },
   "keywords": [],
   "author": "Prathmesh Dhatrak <prathmesh101dhatrak@gmail.com>",
