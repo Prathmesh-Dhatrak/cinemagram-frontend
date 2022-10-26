@@ -13,9 +13,10 @@
   "scripts": {
     "start-client": "cd frontend && npm start",
     "start-server": "cd server && npm start",
+    "cd": "cd ..",
     "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
     "build-dev": "concurrently \"npm run init-project\" \"npm run start-server\" \"npm run start-client\"",
-    "build": "concurrently \"cd server npm run build\" \"cd .. && cd frontend && npm run build\"",
+    "build": "concurrently \"cd server npm build\" \"npm run cd\" \"cd frontend && npm build\"",
     "init-project": "concurrently \"cd frontend && npm install\" \"cd server && npm install\""
   },
   "keywords": [],
