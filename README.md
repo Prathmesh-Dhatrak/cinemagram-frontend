@@ -59,7 +59,7 @@ npm run server
 
 
 <div align="center" >
-  <img src="https://github.com/Prathmesh-Dhatrak/cinemagram-frontend/blob/main/src/images/logo-cg.svg" width="500" alt="logo" style="-webkit-filter: brightness(3.5);
+  <img src="https://github.com/Prathmesh-Dhatrak/cinemagram-frontend/blob/main/src/images/logo-cg.svg" width="500" alt="logo" style="-webkit-filter: brightness(1);
     filter: brightness(3.5);" />
   
 # [Web Chat Application](https://friends-zone.prathmeshdhatrak.com/)
