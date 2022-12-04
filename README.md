@@ -15,7 +15,7 @@ $ npm install
 $ npm start
 ```
 
-## **How to run backend locally ?**
+## **How to run backend ?**
 check out [cinemagram-server](https://github.com/Prathmesh-Dhatrak/cinemagram-server) and follow the stpes in the given readme.
 
 ## **Features -**
