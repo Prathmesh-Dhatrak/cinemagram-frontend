@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/Prathmesh-Dhatrak/cinemagram-frontend/blob/main/src/images/logo-cg.svg" width="500" alt="logo"/>
+  <img src="https://res.cloudinary.com/prathmeshdhatrak-com/image/upload/v1670168008/Friend%20Zone/Logo_n4bdkt.png" width="500" alt="logo"/>
 
   # [Community platforms for cinema buffs](https://cinemagram.prathmeshdhatrak.com/)
     
