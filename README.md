@@ -55,5 +55,4 @@ check out [cinemagram-server](https://github.com/Prathmesh-Dhatrak/cinemagram-se
 - TypeScript
 
 ## **Demo -**
-
-https://user-images.githubusercontent.com/45693044/204060226-1657bb16-2000-48ca-b36e-3e4296d4c96a.mp4
+https://user-images.githubusercontent.com/45693044/205481950-4e529944-ad72-4e3b-9bc8-29d73dc38a9d.mp4
