@@ -2,4 +2,44 @@
     width: 100%;
     @apply px-4;
     @apply laptop:px-6%;
+    @apply mx-auto;
+    @apply max-w-7xl;
+}
+
+.card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+    @apply dark:bg-indigo-1000;
+    @apply transition-all duration-200 ease-in-out;
+}
+
+.card-header {
+    @apply px-4 py-3 border-b border-gray-100;
+    @apply dark:border-gray-800;
+}
+
+.card-body {
+    @apply p-4;
+}
+
+.card-footer {
+    @apply px-4 py-3 border-t border-gray-100;
+    @apply dark:border-gray-800;
+}
+
+.section {
+    @apply py-8;
+}
+
+.section-header {
+    @apply mb-6;
+}
+
+.section-title {
+    @apply text-2xl font-bold;
+    @apply dark:text-white;
+}
+
+.section-subtitle {
+    @apply text-gray-600 mt-1;
+    @apply dark:text-gray-400;
 }

@@ -1,13 +1,50 @@
 .input--error {
-    @extend input[type=text];
     @apply border-red-300 !important;
+    @apply bg-red-50 !important;
+    @apply appearance-none relative block w-full px-6 py-3 border rounded-full;
 
     &:focus {
-        @apply ring-0 border-red-600 !important;
+        @apply ring-red-300 border-red-600 !important;
+        @apply outline-none z-10;
     }
 }
 
 .input-search {
-    @extend input[type=text];
-    @apply py-0;
+    @apply appearance-none relative block w-full px-6 py-0 border border-gray-300 placeholder-gray-500 text-black-900 rounded-full;
+    @apply bg-gray-50;
+    @apply transition-all duration-150;
+
+    &:focus {
+        @apply bg-white;
+        @apply outline-none z-10;
+    }
+}
+
+.dark .input-search {
+    @apply bg-indigo-950;
+
+    &:focus {
+        @apply bg-indigo-900;
+    }
+}
+
+.input-icon {
+    @apply absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400;
+}
+
+/* Custom range input for volume controls etc. */
+input[type="range"] {
+    @apply h-2 w-full bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-indigo-950;
+
+    &::-webkit-slider-thumb {
+        @apply h-4 w-4 rounded-full bg-turquoise-500 appearance-none;
+    }
+
+    &::-moz-range-thumb {
+        @apply h-4 w-4 rounded-full bg-turquoise-500 border-0;
+    }
+
+    &:focus {
+        @apply outline-none;
+    }
 }

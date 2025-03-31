@@ -1,4 +1,53 @@
 .nav-active {
-    @apply text-red-500;
+    @apply text-turquoise-500;
     @apply font-bold;
-}
+    @apply border-b-2 border-turquoise-500;
+    @apply dark:text-turquoise-400;
+  }
+  
+  .link {
+    @apply text-turquoise-700;
+    @apply hover:text-turquoise-600;
+    @apply transition-colors duration-150 ease-in-out;
+    @apply dark:text-turquoise-400 dark:hover:text-turquoise-300;
+  }
+  
+  .link-underline {
+    @apply text-turquoise-700;
+    @apply underline;
+    @apply hover:text-turquoise-600;
+    @apply dark:text-turquoise-400 dark:hover:text-turquoise-300;
+  }
+  
+  .link-muted {
+    @apply text-gray-600;
+    @apply hover:text-gray-800;
+    @apply dark:text-gray-400 dark:hover:text-gray-300;
+  }
+  
+  .link-accent {
+    @apply text-red-700;
+    @apply hover:text-red-600;
+    @apply dark:text-red-500 dark:hover:text-red-400;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2;
+    @apply text-gray-700;
+    @apply hover:text-black;
+    @apply dark:text-gray-300 dark:hover:text-white;
+    @apply font-medium;
+    @apply rounded-md;
+    @apply transition-colors duration-150 ease-in-out;
+  }
+  
+  .nav-link:hover {
+    @apply bg-gray-100;
+    @apply dark:bg-indigo-950;
+  }
+  
+  .nav-link-active {
+    @apply text-turquoise-700;
+    @apply bg-turquoise-100;
+    @apply dark:text-turquoise-400 dark:bg-indigo-950;
+  }

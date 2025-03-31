@@ -6,14 +6,17 @@
   @extend button;
   width: 100%;
 }
+
 .button--muted {
   @extend button;
   @apply bg-gray-100;
   @apply text-black-600;
   @apply rounded-md;
+  @apply shadow-sm;
+  @apply transition duration-150 ease-in-out;
 
   &:hover {
-    @apply bg-gray-300;
+    @apply bg-gray-200;
     @apply text-black-700;
   }
 
@@ -22,13 +25,17 @@
   }
 
   &:focus {
-    @apply bg-gray-100;
+    @apply bg-gray-200;
+    @apply outline-none;
+    @apply ring-2 ring-gray-300;
   }
 }
 
 .button--danger {
   @extend button;
-  @apply bg-red-500;
+  @apply bg-red-600;
+  @apply shadow-sm;
+  @apply transition duration-150 ease-in-out;
 
   &:hover {
     @apply bg-red-700;
@@ -37,5 +44,41 @@
   &:active,
   &:focus {
     @apply bg-red-700;
+    @apply outline-none;
+    @apply ring-2 ring-red-300;
+  }
+}
+
+.button--primary {
+  @apply bg-turquoise-500;
+  @apply shadow-sm;
+  @apply transition duration-150 ease-in-out;
+
+  &:hover {
+    @apply bg-turquoise-600;
+  }
+
+  &:active,
+  &:focus {
+    @apply bg-turquoise-700;
+    @apply outline-none;
+    @apply ring-2 ring-turquoise-300;
+  }
+}
+
+.button--secondary {
+  @apply bg-gray-600;
+  @apply shadow-sm;
+  @apply transition duration-150 ease-in-out;
+
+  &:hover {
+    @apply bg-gray-700;
+  }
+
+  &:active,
+  &:focus {
+    @apply bg-gray-700;
+    @apply outline-none;
+    @apply ring-2 ring-gray-300;
   }
 }

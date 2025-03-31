@@ -1,0 +1,170 @@
+/* Post card styling */
+.post-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
+  @apply dark:bg-indigo-1000;
+  @apply border border-gray-100;
+  @apply dark:border-gray-800;
+  @apply transition-all duration-200;
+}
+
+.post-card:hover {
+  @apply shadow-lg;
+  @apply transform;
+  @apply -translate-y-1;
+  @apply border-turquoise-200;
+  @apply dark:border-turquoise-900;
+}
+
+.post-header {
+  @apply p-4 flex justify-between items-center;
+  @apply border-b border-gray-100;
+  @apply dark:border-gray-800;
+}
+
+.post-body {
+  @apply p-4;
+}
+
+.post-footer {
+  @apply flex items-center justify-between px-4 py-3;
+  @apply border-t border-gray-100;
+  @apply dark:border-gray-800;
+}
+
+.post-description {
+  @apply text-gray-800 break-words;
+  @apply dark:text-gray-200;
+}
+
+/* User card styling */
+.user-card {
+  @apply flex items-center p-4;
+  @apply bg-white rounded-lg shadow-sm;
+  @apply dark:bg-indigo-1000;
+  @apply border border-gray-100;
+  @apply dark:border-gray-800;
+  @apply shadow-sm;
+  @apply transition-all duration-200;
+}
+
+.user-card:hover {
+  @apply border-turquoise-200;
+  @apply dark:border-turquoise-900;
+  @apply transform;
+  @apply -translate-y-1;
+  @apply shadow-md;
+}
+
+/* Comment styling */
+.comment {
+  @apply flex items-start space-x-3 p-3;
+  @apply rounded-lg;
+}
+
+.comment-bubble {
+  @apply bg-gray-100 px-3 py-2 rounded-lg relative;
+  @apply dark:bg-indigo-950;
+}
+
+.comment-bubble-own {
+  @apply bg-turquoise-100 px-3 py-2 rounded-lg relative;
+  @apply dark:bg-turquoise-900 dark:bg-opacity-30;
+}
+
+/* Badge styling */
+.badge {
+  @apply inline-flex items-center justify-center;
+  @apply rounded-full;
+  @apply bg-red-600 text-white;
+  @apply text-xs font-bold;
+  @apply w-5 h-5;
+  @apply px-1.5;
+}
+
+/* Navigation button styling */
+.nav-button {
+  @apply p-2 rounded-full;
+  @apply hover:bg-gray-100;
+  @apply dark:text-gray-200 dark:hover:bg-indigo-950;
+  @apply transition-colors duration-150;
+}
+
+/* Form elements */
+.form-group {
+  @apply space-y-2 mb-4;
+}
+
+.form-label {
+  @apply text-sm font-medium text-gray-700;
+  @apply dark:text-gray-300;
+}
+
+.form-hint {
+  @apply text-xs text-gray-500 mt-1;
+  @apply dark:text-gray-400;
+}
+
+.form-error {
+  @apply text-xs text-red-600 mt-1;
+  @apply dark:text-red-400;
+}
+
+/* Cinema theme specific elements */
+.cinema-ticket {
+  @apply bg-white p-4 rounded-lg;
+  @apply dark:bg-indigo-1000;
+  @apply border-2 border-dashed border-turquoise-500;
+  @apply shadow-md;
+  @apply relative;
+  @apply overflow-hidden;
+}
+
+.cinema-ticket::before,
+.cinema-ticket::after {
+  content: '';
+  @apply absolute w-8 h-8 bg-gray-100;
+  @apply dark:bg-indigo-1100;
+  @apply rounded-full;
+}
+
+.cinema-ticket::before {
+  @apply -left-4 -top-4;
+}
+
+.cinema-ticket::after {
+  @apply -right-4 -bottom-4;
+}
+
+/* Loadings and skeletons */
+.skeleton {
+  @apply animate-pulse rounded;
+  @apply bg-gray-200;
+  @apply dark:bg-indigo-950;
+}
+
+.skeleton-circle {
+  @apply rounded-full;
+}
+
+.skeleton-text {
+  @apply h-4 w-full;
+}
+
+.skeleton-image {
+  @apply h-40 w-full;
+}
+
+/* Chat elements */
+.chat-bubble {
+  @apply rounded-lg px-4 py-2 max-w-xs;
+  @apply shadow-sm;
+}
+
+.chat-bubble-outgoing {
+  @apply bg-turquoise-500 text-white ml-auto;
+}
+
+.chat-bubble-incoming {
+  @apply bg-gray-100 text-black-600 mr-auto;
+  @apply dark:bg-indigo-950 dark:text-white;
+}

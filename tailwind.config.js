@@ -1,6 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
-// console.log(colors);
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class", // or 'media' or 'class'
@@ -21,25 +21,35 @@ module.exports = {
       colors: {
         coolGray: colors.coolGray,
         gray: colors.gray,
-        "turquoise-100": "#8dfcde",
-        "turquoise-200": "#8dfcde",
-        "turquoise-300": "#8dfcde",
-        "turquoise-400": "#6effd8",
-        "turquoise-500": "#6effd8",
-        "turquoise-700": "#6effd8",
-        "turquoise-800": "#6effd8",
-        "turquoise-900": "#3ff3c3",
-        "turquoise-950": "#3ff3c3",
-        "turquoise-1000": "#3ff3c3",
-        "turquoise-1100": "#3ff3c3",
-        "indigo-950": "#1b1925",
-        "indigo-1000": "#FFCC66",
-        "indigo-1100": "#FFCC66",
-        "black-400":"#00000",
-        "black-500":"#00000",
-        "black-600":"#00000",
-        "black-700":"#00000",
-        "black-900":"#00000",
+        // Primary brand color - turquoise shades
+        "turquoise-100": "#C6F7F0",
+        "turquoise-200": "#A3F2E6",
+        "turquoise-300": "#7FECDC",
+        "turquoise-400": "#5BE6D2",
+        "turquoise-500": "#38E0C8", // Primary
+        "turquoise-600": "#1ECDB5",
+        "turquoise-700": "#1BB39E", // Accent
+        "turquoise-800": "#179987",
+        "turquoise-900": "#128070",
+        "turquoise-950": "#0F6A5D",
+        "turquoise-1000": "#0C5349",
+        "turquoise-1100": "#093D36",
+        
+        // Dark theme background shades
+        "indigo-950": "#1E1B2E",
+        "indigo-1000": "#141225", // Dark bg
+        "indigo-1100": "#0E0C1A",
+        
+        // Text colors
+        "black-400": "#4B4B4B",
+        "black-500": "#3A3A3A",
+        "black-600": "#2D2D2D",
+        "black-700": "#1F1F1F",
+        "black-900": "#0F0F0F",
+        
+        // Cinema-themed accent color
+        "red-600": "#E53E3E",
+        "red-700": "#C53030", // Primary accent
       },
       height: {
         "60px": "60px",

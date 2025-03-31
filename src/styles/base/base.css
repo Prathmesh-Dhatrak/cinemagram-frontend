@@ -1,23 +1,31 @@
+@import "../../fonts/JetBrainsMono/JetBrainsMono";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "../../fonts/JetBrainsMono/JetBrainsMono";
+
 
 :root {
   --background: #f9f9f9;
   --modalBackground: #fff;
   --modalOverlayBackground: rgba(0, 0, 0, 0.3);
-  --scrollBarTrackBg: #cacaca;
+  --scrollBarTrackBg: #e5e5e5;
+  --primary: #38E0C8;
+  --primary-dark: #1BB39E;
+  --accent: #C53030;
+  --text-primary: #3A3A3A;
+  --text-secondary: #4B4B4B;
 }
 
 :root.dark {
-  --background: #08070f;
-  --modalBackground: #100f17;
+  --background: #141225;
+  --modalBackground: #1E1B2E;
   --modalOverlayBackground: rgba(0, 0, 0, 0.7);
-  --scrollBarTrackBg: #1e1c2a;
-  /* --color-primary-light: #8dfcde;
-  --color-primary-main: #6effd8;
-  --color-primary-dark: #3ff3c3; */
+  --scrollBarTrackBg: #252138;
+  --primary: #38E0C8;
+  --primary-dark: #1BB39E;
+  --accent: #C53030;
+  --text-primary: #F9F9F9;
+  --text-secondary: #E0E0E0;
 }
 
 @layer base {
@@ -46,7 +54,7 @@
   }
 
   a {
-    @apply text-red-600;
+    @apply text-red-700;
   }
 
   button {
@@ -64,15 +72,15 @@
       text-sm
       font-medium
       rounded-full
-      text-black
-      bg-indigo-600;
+      text-white
+      bg-turquoise-600;
 
     &:hover {
-      @apply bg-indigo-700;
+      @apply bg-turquoise-700;
     }
 
     &:focus {
-      @apply bg-indigo-900;
+      @apply bg-turquoise-800;
       @apply outline-none;
     }
   }
@@ -93,13 +101,17 @@
       placeholder-gray-500
       text-black-900
       rounded-full
+      transition
+      duration-150
+      ease-in-out
       readonly:opacity-50
-      focus:border-indigo-100
-      hover:cursor-not-allowed;
+      focus:border-turquoise-500
+      hover:border-turquoise-300;
 
     &:focus {
       @apply outline-none;
       @apply z-10;
+      @apply ring-1 ring-turquoise-500 ring-opacity-50;
     }
 
     @screen mobile {
@@ -110,20 +122,21 @@
   input[type="checkbox"] {
     @apply h-4
       w-4
-      text-red-600
-      border-indigo-500
+      text-turquoise-500
+      border-turquoise-500
       rounded
-      hover:cursor-not-allowed
-      focus:ring-0
+      transition
+      duration-150
+      focus:ring-turquoise-500
       readonly:opacity-50;
 
     &:focus {
-      @apply ring-0 outline-none;
+      @apply ring-2 ring-turquoise-500 ring-opacity-50 outline-none;
     }
   }
 
   textarea {
-    @apply rounded-md;
+    @apply rounded-lg;
     @apply resize-none;
   }
 
@@ -136,28 +149,30 @@
     @apply border-gray-300;
     @apply rounded-full;
     @apply px-4 py-3;
+    @apply focus:ring-1 focus:ring-turquoise-500 focus:border-turquoise-500 focus:outline-none;
   }
 }
 
 @layer utilities {
   .scrollbar {
-    scrollbar-color: white;
+    scrollbar-color: var(--primary-dark);
     scrollbar-width: thin;
 
     &::-webkit-scrollbar {
-      width: 10px;
+      width: 8px;
     }
 
     &::-webkit-scrollbar-track {
       background: var(--scrollBarTrackBg);
+      border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-      @apply bg-gray-500;
+      @apply bg-turquoise-700;
       border-radius: 10px;
 
       &:hover {
-        @apply bg-indigo-500;
+        @apply bg-turquoise-600;
       }
     }
   }
@@ -171,6 +186,8 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   background: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease-in-out;
 }
 
 code {

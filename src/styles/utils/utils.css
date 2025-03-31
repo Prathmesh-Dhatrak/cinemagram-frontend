@@ -6,11 +6,12 @@
   -webkit-box-orient: vertical;
 }
 
+/* Animated loader dots */
 .animate-loader {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  animation-duration: 0.5s;
+  animation-duration: 0.6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-direction: alternate;
@@ -20,16 +21,16 @@
   }
 
   &:nth-of-type(2) {
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
   }
 
   &:nth-of-type(3) {
-    animation-delay: 0.8s;
+    animation-delay: 0.6s;
   }
 }
 
 .animate-loader-dark {
-  @apply bg-indigo-700;
+  @apply bg-turquoise-500;
   animation-name: blink-dark;
 }
 
@@ -40,22 +41,38 @@
 
 @keyframes blink-dark {
   to {
-    background: #a29afc;
+    @apply bg-turquoise-300;
+    transform: scale(1.2);
   }
 }
 
 @keyframes blink-light {
   to {
     opacity: 0.3;
+    transform: scale(1.2);
   }
 }
 
+/* Toast container positioned correctly */
 .Toastify {
   z-index: 9999;
 }
 
+/* Animation utilities */
 .animate-fade {
   animation: animate-fade 0.5s ease;
+}
+
+.animate-slide-up {
+  animation: animate-slide-up 0.4s ease;
+}
+
+.animate-slide-down {
+  animation: animate-slide-down 0.4s ease;
+}
+
+.animate-scale {
+  animation: animate-scale 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @keyframes animate-fade {
@@ -67,6 +84,40 @@
   }
 }
 
+@keyframes animate-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animate-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animate-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Transition group animations */
 .fade-enter {
   max-height: 0;
   opacity: 0;
@@ -89,6 +140,7 @@
   transition: all 0.5s;
 }
 
+/* Social login divider */
 .social-login-divider {
   position: relative;
   display: block;
@@ -96,6 +148,8 @@
   text-align: center;
   @apply text-sm;
   @apply text-black-400;
+  @apply my-4;
+  @apply dark:text-gray-400;
 
   &:after,
   &:before {
@@ -107,6 +161,7 @@
     width: 45%;
     height: 1px;
     @apply bg-gray-200;
+    @apply dark:bg-gray-700;
   }
 
   &:after {
@@ -116,4 +171,47 @@
   &:before {
     left: 0;
   }
+}
+
+/* Common utility classes */
+.avatar-ring {
+  @apply ring-2 ring-turquoise-500 ring-offset-2;
+  @apply dark:ring-offset-indigo-1000;
+}
+
+.hover-lift {
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* Status indicators */
+.status-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-badge-success {
+  @apply bg-gray-100 text-black-600;
+  @apply dark:bg-indigo-950 dark:text-gray-300;
+}
+
+.status-badge-info {
+  @apply bg-gray-100 text-black-600;
+  @apply dark:bg-indigo-950 dark:text-gray-300;
+}
+
+.status-badge-warning {
+  @apply bg-gray-100 text-black-600;
+  @apply dark:bg-indigo-950 dark:text-gray-300;
+}
+
+.status-badge-danger {
+  @apply bg-red-600 text-white;
+  @apply dark:bg-red-700 dark:text-white;
 }
